@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD NEW BOOK</title>
+    <link rel="stylesheet" href="addBook.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>DIGITAL LIBRARY</h1>
+        </header>
+        <div class="main-content">
+            <nav class="sidebar">
+                <button class="sidebar-item">ADMIN</button>
+                <button class="sidebar-item"><a href="addBook.html"></a>ADD BOOKS</button>
+                <button class="sidebar-item"><a href="book_Request.html"></a>BOOK REQUEST</button>
+                <button class="sidebar-item"><a href="book_Report.html"></a>BOOK REPORT</button>
+                <button class="sidebar-item"><a href="add_Student.html"></a>ADD STUDENT</button>
+                <button class="sidebar-item">STUDENT REPORT</button>
+                <button class="sidebar-item">ISSUE BOOK</button>
+                <button class="sidebar-item">ISSUE REPORT</button>
+                <button class="sidebar-item"><a href="/Authority/Authority_Login.html"></a>LOGOUT</button>
+            </nav>
+            
+            <main class="content">
+                <div class="request-book-section">
+                    <h2>ADD NEW BOOK</h2>
+                    Book Name : <input type="text" placeholder="Search..">
+                    Details : <input type="text" placeholder="Book Details......">
+                    Author : <input type="text" placeholder="Author Details.....">
+                    Publication : <input type="text" placeholder="Publication Details.....">
+
+                    <div class="check">
+                        <div class="branch-title">Branch: </div>
+                        <div class="branch-option">
+                            <input type="checkbox" id="it">
+                            <label for="it">IT</label>
+                            <input type="checkbox" id="Electrical">
+                            <label for="Electrical">Electrical</label>
+                        </div>
+
+                        <div class="branch-option">
+                            <input type="checkbox" id="Civil">
+                            <label for="Civil">Civil</label>
+                            <input type="checkbox" id="Management">
+                            <label for="Management">Management</label>
+                        </div>
+
+                        <div class="branch-option">
+                            <input type="checkbox" id="Machanical">
+                            <label for="Machanical">Machanical</label>
+                        </div>
+                    </div>
+
+                    Price : <input type="text" placeholder="Book Price....">
+                    Quantity : <input type="number" placeholder="Enter Book Quantity">
+
+                    <div class="file-upload">
+                        <label for="book-photo">Upload Book Photo : </label>
+                        <input type="file" id="book-photo" name="book-photo" accept="image/*">
+                    </div>
+
+                    <button class="Submit">Submit</button>
+                    <i class="arrow right"></i>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Page</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">SpaceSquare</a></div>
+        <div class="menu">
+          <a href="#">
+            <ion-icon name="close" class="close"></ion-icon>
+          </a>
+    
+          <ul>
+            <li><a href="#" class="under">HOME</a></li>
+            <li><a href="#" class="under">SHOP</a></li>
+            <!-- <li><a href="#" class="under">OUR PRODUCTS</a></li> -->
+            <li><a href="#" class="under">CONTACT US</a></li>
+            <li><a href="#" class="under">ABOUT US</a></li>
+          </ul>
+        </div>
+        <div class="heading">
+          <ul>
+            <li><a href="#" class="under">HOME</a></li>
+            <li><a href="#" class="under">SHOP</a></li>
+            <!-- <li><a href="#" class="under">OUR PRODUCTS</a></li> -->
+            <li><a href="#" class="under">CONTACT US</a></li>
+            <li><a href="#" class="under">ABOUT US</a></li>
+            
+            <div class="login-container">
+              <!-- <li><a href="#" class="under">LOGIN</a></li> -->
+              <button class="login-button">LogIn</button>
+  
+              <div class="login-options">
+                  <button  class="option"> <a href="Authority/Authority_Login.html">Authority Login</a></button>
+                  <button class="option"> <a href="Student/Student_Login.html"> Students login </a></button>
+              </div>
+          </div>
+          </ul>
+        </div>
+        <div class="heading1">
+          <ion-icon name="menu" class="ham"></ion-icon>
+        </div>
+      </header>
+      <section>
+        <div class="blur"></div>
+        <div class="section">
+          <div class="section1">
+            <div class="img-slider">
+              <img src="Images/college.jpg" alt="" class="img">
+              <img src="Images/library.jpg" alt="" class="img">
+              <img src="Images/library-shelf.jpg" alt="" class="img">
+              <img src="Images/slider2.webp" alt="" class="img">
+              <img src="Images/slider3.jpg" alt="" class="img">
+              <img src="Images/slider4.jpg" alt="" class="img">
+              <img src="Images/slider5.png" alt="" class="img">
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+    
+      </section>
+     
+          <footer class="footer">
+
+            <div class="footer-content">
+                <div class="section">
+                    <h3>Contact Us</h3>
+                    <p>Email: shoyabmulani207@gmail.com</p>
+                    <p>Phone: +919579367009</p>
+                    <p>Address: Dy Patil Management Campus</p>
+                </div>       
+                <div class="section">
+                    <h3>Library Hours</h3>
+                    <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>       
+                <div class="section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">Search Catalog</a></p>
+                    <p><a href="#">My Account</a></p>
+                    <p><a href="#">Support</a></p>
+                </div>      
+                <div class="section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook">&#xf09a;</a>
+                        <a href="#" title="Twitter">&#xf099;</a>
+                        <a href="#" title="Instagram">&#xf16d;</a>
+                    </div>
+                </div>
+            </div>
+                <div class="copyright">
+                     &copy; 2024 Library Management System. All Rights Reserved.
+                </div>
+        </footer>
+      <script>
+        const loginButton = document.querySelector('.login-button');
+        const loginOptions = document.querySelector('.login-options');
+
+        loginButton.addEventListener('click',() =>{
+            loginOptions.classList.toggle('show');
+        });
+        const close = document.querySelector(".close");
+        const open = document.querySelector(".ham");
+        const menu = document.querySelector(".menu");
+        close.addEventListener("click", () => {
+            menu.style.visibility = "hidden";
+        });
+        open.addEventListener("click", () => {
+            menu.style.visibility = "visible";
+        });
+      </script>
+</body>
+</html>
